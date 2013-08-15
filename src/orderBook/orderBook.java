@@ -21,8 +21,7 @@ public class orderBook {
 		}
 		// Historic Change
 		if ((nextChange != null && nextSyntheticChange == null)
-				|| (nextChange != null && (nextChange.getTime() < nextSyntheticChange
-						.getTime()))) {
+				|| (nextChange != null && (nextChange.getTime() < nextSyntheticChange.getTime()))) {
 			setTime(nextChange);
 			setTrades();
 			state = HISTORIC;
